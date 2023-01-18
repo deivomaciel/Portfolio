@@ -20,9 +20,11 @@ export default function Header() {
         if(menuState) {
             closeMenu.current.style.display = 'flex'
             menu.current.style.transform = 'translateX(0)'
+            document.querySelector('html').style.overflowY = 'hidden'
         } else {
             menu.current.style.transform = 'translateX(100vw)'
             closeMenu.current.style.display = 'none'
+            document.querySelector('html').style.overflowY = 'auto'
         }
     }
 

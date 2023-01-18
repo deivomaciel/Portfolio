@@ -13,14 +13,14 @@ export default function Home() {
             span.forEach(el => {
                 el.style.display = 'block'
             })
-        }, 2000)
+        }, 1000)
     
         setInterval(() => {
             text.style.animation = 'StopGlitch'
             span.forEach(el => {
                 el.style.display = 'none'
             })
-        }, 3000)
+        }, 2000)
     })
 
     return (
