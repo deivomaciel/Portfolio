@@ -8,6 +8,7 @@ main {
     align-items: center;
     background-image: url(../../assets/des.png);
     background-repeat: no-repeat;
+    background: red;
 }
 
 .container {
