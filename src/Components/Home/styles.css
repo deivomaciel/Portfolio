@@ -1,11 +1,20 @@
 main {
-    height: 100vh;
+    /* height: 100vh; */
+    height: calc(var(--vh, 1vh) * 100);
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url(../../assets/des.png);
     background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-content {

@@ -25,17 +25,19 @@ export default function Home() {
 
     return (
         <main id="home">
-            <div className='img-content'>
-                <img src={photo} alt="Ilustração"/>
-            </div> 
+            <div className='container'>
+                <div className='img-content'>
+                    <img src={photo} alt="Ilustração"/>
+                </div> 
 
-            <div className="name-container">
-                <h1 className="glitch">
-                    <span aria-hidden="true">Deivide Maciel</span>
-                        Deivide Maciel
-                    <span aria-hidden="true">Deivide Maciel</span>
-                </h1>
-                <p>Desenvolvedor Front-End</p>
+                <div className="name-container">
+                    <h1 className="glitch">
+                        <span aria-hidden="true">Deivide Maciel</span>
+                            Deivide Maciel
+                        <span aria-hidden="true">Deivide Maciel</span>
+                    </h1>
+                    <p>Desenvolvedor Front-End</p>
+                </div>
             </div>
 
             <div className="scroll-down-container">
