@@ -1,5 +1,5 @@
 main {
-    /* height: 100vh; */
+    height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     margin: 0 auto;
     display: flex;
@@ -8,7 +8,6 @@ main {
     align-items: center;
     background-image: url(../../assets/des.png);
     background-repeat: no-repeat;
-    background: red;
 }
 
 .container {
