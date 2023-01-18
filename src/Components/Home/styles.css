@@ -1,0 +1,189 @@
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/des.png);
+    background-repeat: no-repeat;
+}
+
+.img-content {
+    width: 216px;
+    height: 216px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 8px solid #F3B911;
+    border-radius: 60%;
+}
+
+.img-content img {
+    width: 180px;
+    height: 180px;
+    border-radius: 60%;
+}
+
+.name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name-container p {
+    color: #fafafa;
+    font-size: 1.5rem; 
+}
+
+.glitch {
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    text-shadow: 
+        0.05em 0 0 rgba(255, 0, 0, .75),
+        -0.025em -0.05em 0 rgba(0, 255, 0, .75),
+        0.025em 0.05em 0 rgba(0, 0, 255, .75)
+    ;
+    color: var(--main);
+}
+
+.glitch span {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.glitch {
+    text-shadow: none;
+}
+
+.glitch span:first-child {
+    animation: glitch 650ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 30%);
+    transform: translate(-0.05em, -0.025em);
+    opacity: .8;
+}
+
+.glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+    transform: translate(0.05em, 0.025em);
+    opacity: .8;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 
+            0.05em 0 0 rgba(255, 0, 0, .75),
+            -0.05em -0.025em 0 rgba(0, 255, 0, .75),
+            -0.025em 0.05em 0 rgba(0, 0, 255, .75)
+        ; 
+    }
+
+    14% {
+        text-shadow: 
+            0.05em 0 0 rgba(255, 0, 0, .75),
+            -0.05em -0.025em 0 rgba(0, 255, 0, .75),
+            -0.025em 0.05em 0 rgba(0, 0, 255, .75)
+        ; 
+    }
+
+    15% {
+        text-shadow: 
+            -0.05em 0.025em 0 rgba(255, 0, 0, .75),
+            0.025em 0.025em 0 rgba(0, 255, 0, .75),
+            -0.025em 0.05em 0 rgba(0, 0, 255, .75)
+        ; 
+    }
+
+    49% {
+        text-shadow: 
+            -0.05em 0.025em 0 rgba(255, 0, 0, .75),
+            0.025em 0.025em 0 rgba(0, 255, 0, .75),
+            -0.025em 0.05em 0 rgba(0, 0, 255, .75)
+        ; 
+    }
+
+    50% {
+        text-shadow: 
+            0.025em 0.05em 0 rgba(255, 0, 0, .75),
+            0.05em 0 0 rgba(0, 255, 0, .75),
+            0 -0.05em 0 rgba(0, 0, 255, .75)
+        ; 
+    }
+
+    99% {
+        text-shadow: 
+            0.025em 0.05em 0 rgba(255, 0, 0, .75),
+            0.05em 0 0 rgba(0, 255, 0, .75),
+            0 -0.05em 0 rgba(0, 0, 255, .75)
+        ; 
+    }
+
+    100% {
+        text-shadow: 
+            -0.025em 0 0 rgba(255, 0, 0, .75),
+            -0.025em -0.025em 0 rgba(0, 255, 0, .75),
+            -0.025em -0.05em 0 rgba(0, 0, 255, .75)
+        ; 
+    }
+}
+
+.scroll-down-container {
+    width: 100vw;
+    height: 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1.23%, rgba(0, 0, 0, 0.553191) 35.64%, #000000 83.27%); */
+    background: linear-gradient(180deg, rgba(13, 17, 23, 0) 1.23%, rgba(13, 17, 23, 0.553191) 35.64%, #0D1117 83.27%);
+}
+
+.scroll-down-container {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.scroll-down-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: float 1s ease-in-out infinite;
+    text-decoration: none;
+    color: #fafafa;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1314px) {
+    .img-content {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .img-content img {
+        width: 164px;
+        height: 164px;
+    }
+}

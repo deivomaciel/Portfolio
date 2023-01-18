@@ -1,0 +1,19 @@
+.skill-card-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    border: 1px solid #333333;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+    background: #1e1e1e;
+}
+
+@media (max-width: 1204px) {
+    .skill-card-container {
+        transform: scale(.8);
+    }
+}

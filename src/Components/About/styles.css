@@ -1,0 +1,114 @@
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 48px 32px 32px 32px;
+}
+
+.about-container h2 {
+    font-size: 3rem;
+    margin-bottom: 24px;
+    color: var(--main);
+}
+
+.about-container p {
+    width: 500px;
+    font-size: 1.2rem;
+    letter-spacing: .08rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #fafafa;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.skills-grid {
+    margin: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 8px;
+    border-radius: 24px;
+}
+
+.skills-container button {
+    width: 40px;
+    height: 40px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: calc(82.5px - 40px);
+    border: none;
+    border-radius: 60%;
+    cursor: pointer;
+    color: #fafafa;
+    background: #434343;
+}
+
+.left-btn {
+    left: 0;
+}
+
+.right-btn {
+    right: 0px;
+}
+
+@media (max-width: 1254px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .skills-grid {
+        transform: scale(1.1);
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 32px;
+    }
+
+    .skills-grid::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 794px) {
+    .skills-grid {
+        width: 437px;
+        display: flex;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: inline mandatory;
+    }
+
+    .skills-grid > * {
+        scroll-snap-align: start;
+    }
+
+    .skills-container button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 546px) {
+    .about-container p {
+        width: 300px;
+        font-size: 1rem;
+    }
+
+    .skills-grid {
+        width: 280px;
+    }
+}
