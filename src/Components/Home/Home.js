@@ -1,9 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { IoMdArrowDropdown } from 'react-icons/io'
 import photo from '../../assets/ft_perfil.png'
 import './styles.css'
 
 export default function Home() {
+    const home = useRef(null)
+
+    useEffect(() => {
+        if(window.screen.width <= 648) {
+            home.current.style.height = window.screen.availHeight + 'px'
+        }
+    }, [])
+
     useEffect(() => {
         const text = document.querySelector('.glitch')
         const span = document.querySelectorAll('.glitch span')
@@ -24,7 +32,7 @@ export default function Home() {
     })
 
     return (
-        <main id="home">
+        <main id="home" ref={home}>
             <div className='container'>
                 <div className='img-content'>
                     <img src={photo} alt="Ilustração"/>

@@ -5,20 +5,14 @@ import { IoLogoJavascript } from "react-icons/io"
 import { GrReactjs } from "react-icons/gr"
 import { TbBrandNextjs } from "react-icons/tb"
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md"
-import { useEffect, useRef } from "react"
+import { useRef } from "react"
 
 export default function About() {
     const slider = useRef(null)
-    const about = useRef(null)
-
-    useEffect(() => {
-        about.current.style.marginTop = `-${(window.screen.height - window.screen.availHeight)}px`
-    }, [])
-
     const handleSide = direction => slider.current.scrollLeft += direction * 300
 
     return (
-        <section id="about" className="about-container" ref={about}>
+        <section id="about" className="about-container">
             <div className="about-content">
                 <h2>Sobre mim</h2>
                 <p>Sou um desenvolvedor front-end apaixonado por tecnologia e sempre em busca de aprender novas habilidades.<br/><br/>Tenho as habilidades necessárias para construir projetos incríveis, incluindo HTML, CSS, JavaScript, ReactJS e NodeJS. Como autodidata, me orgulho de ter desenvolvido vários projetos pessoais utilizando essas tecnologias.</p>
