@@ -103,6 +103,10 @@
 }
 
 @media (max-width: 546px) {
+    .about-container {
+        margin-top: -14px;
+    }
+
     .about-container p {
         width: 300px;
         font-size: 1rem;

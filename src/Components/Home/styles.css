@@ -143,13 +143,9 @@ main {
     align-items: center;
     position: absolute;
     bottom: 0;
-    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1.23%, rgba(0, 0, 0, 0.553191) 35.64%, #000000 83.27%); */
-    background: linear-gradient(180deg, rgba(13, 17, 23, 0) 1.23%, rgba(13, 17, 23, 0.553191) 35.64%, #0D1117 83.27%);
-}
-
-.scroll-down-container {
     text-decoration: none;
     color: #fafafa;
+    background: linear-gradient(180deg, rgba(13, 17, 23, 0) 1.23%, rgba(13, 17, 23, 0.553191) 35.64%, #0D1117 83.27%);
 }
 
 .scroll-down-container a {
