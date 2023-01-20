@@ -193,3 +193,9 @@ main {
         height: 164px;
     }
 }
+
+@media (max-width: 404px) {
+    .container {
+        margin-top: -48px;
+    }
+}

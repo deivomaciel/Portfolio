@@ -72,11 +72,14 @@ header a:hover {
 }
 
 .mobile-menu li a{
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    margin-left: 34px;
+}
+
+.mobile-menu li a span {
+    margin-left: 24px;
 }
 
 .mobile-menu span {

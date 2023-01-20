@@ -9,6 +9,7 @@
     border: 1px solid #333333;
     transition: all .5s;
     border-radius: 8px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
     background: #1E1E1E;
 }
 

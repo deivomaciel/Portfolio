@@ -1,4 +1,5 @@
 import About from "./Components/About/About";
+import Contacts from "./Components/Contacts/Contacts";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Projects from "./Components/Projects/Projects";
@@ -10,7 +11,7 @@ function App() {
       <Home />
       <About />
       <Projects />
-      <footer></footer>
+      <Contacts />
     </div>
   );
 }
