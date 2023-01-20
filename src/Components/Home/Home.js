@@ -5,11 +5,10 @@ import './styles.css'
 
 export default function Home() {
     const home = useRef(null)
+    const arrow = useRef(null)
 
     useEffect(() => {
-        if(window.screen.width <= 648) {
-            home.current.style.height = window.screen.availHeight + 'px'
-        }
+        home.current.style.height = arrow.current.offsetTop + arrow.current.offsetHeight + 'px'
     }, [])
 
     useEffect(() => {
@@ -48,7 +47,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="scroll-down-container">
+            <div className="scroll-down-container" ref={arrow}>
                 <a href="#about"><IoMdArrowDropdown size={32} /></a>
             </div>
         </main>

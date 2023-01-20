@@ -155,6 +155,7 @@ main {
     text-decoration: none;
     color: #fafafa;
     background: linear-gradient(180deg, rgba(13, 17, 23, 0) 1.23%, rgba(13, 17, 23, 0.553191) 35.64%, #0D1117 83.27%);
+    /* background: rebeccapurple; */
 }
 
 .scroll-down-container a {
