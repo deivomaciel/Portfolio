@@ -9,6 +9,8 @@ import netflixImage from '../../assets/netflix.png'
 import netflixFavicon from '../../assets/favicon_netflix.png'
 import spaceImage from '../../assets/space.png'
 import spaceFavicon from '../../assets/favicon_space.png'
+import cepImage from '../../assets/cep.png'
+import  cepFavicon from '../../assets/favicon_cep.png'
 import { MdOutlineClose, MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md'
 import { BsArrowRight } from 'react-icons/bs'
 
@@ -63,13 +65,13 @@ export default function Projects() {
             image: velhaImage
         },
         {
-            id: 5,
-            icon: velhaFavicon,
-            title: 'Jogo da Velha',
-            link: 'https://jogo-da-velha-on.vercel.app/',
-            domain: 'jogo-da-velha-on.vercel.app',
-            image: velhaImage
-        },
+            id: 6,
+            icon: cepFavicon,
+            title: 'Buscador de CEP',
+            link: 'https://buscadorcep-seven.vercel.app/',
+            domain: 'buscadorcep-seven.vercel.app',
+            image: cepImage
+        }
     ]
 
     const showMore = (state, flow) => {
